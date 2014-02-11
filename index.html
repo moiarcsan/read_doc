@@ -1,83 +1,337 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+<!doctype html>
+<html lang="en">
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+	<head>
+		<meta charset="utf-8">
 
-    <title>Read doc by moiarcsan</title>
-  </head>
+		<title>reveal.js - The HTML Presentation Framework</title>
 
-  <body>
-    <header>
-      <div class="inner">
-        <h1>Read doc</h1>
-        <h2>It&#39;s an example repo to learn how to generate a doc reader structur with python</h2>
-        <a href="https://github.com/moiarcsan/read_doc" class="button"><small>View project on</small>GitHub</a>
-      </div>
-    </header>
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+		<!-- For syntax highlighting -->
+		<!--<link rel="stylesheet" href="lib/css/zenburn.css">-->
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+	<body>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-        </section>
-
-        <aside id="sidebar">
-          <a href="https://github.com/moiarcsan/read_doc/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/moiarcsan/read_doc/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
-
-          <p class="repo-owner"><a href="https://github.com/moiarcsan/read_doc"></a> is maintained by <a href="https://github.com/moiarcsan">moiarcsan</a>.</p>
-
-          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
+		<div class="reveal">
+			<div class="slides" style="font-family: Cabin Sketch, sans-serif">
+    <section>
+        <h1>Introducción a OpenStreetMap</h1>
+<div style="text-align: right; position: absolute; width: 575px; height: 46px; z-index: 4; left: 192px; top: 271px;" class="absolute-element">XIII Betabeers Sevilla- Octubre 2013</div>
+<div style="text-align: right; position: absolute; width: 737.704834605598px; height: 47px; z-index: 4; left: 103px; top: 394px; max-height: none; max-width: none;" class="absolute-element">
+<a href="http://www.linkedin.com/pub/moises-arcos-santiago/50/9aa/66b">Moisés Arcos</a>
+        <span> </span>
+        <a href="https://twitter.com/MoiArcSan">@moiarcsan</a>
+</div>
+<div style="text-align: right; position: absolute; width: 333px; height: 46px; z-index: 4; left: 502px; top: 462px;" class="absolute-element">
+        <br>
     </div>
+<div style="text-align: right; position: absolute; width: 740.70737913486px; height: 46px; z-index: 4; left: 101px; top: 478px; max-height: none; max-width: none;" class="absolute-element">
+    <a href="http://sevilla.geoinquietos.org">Geoinquietos Sevilla</a>
+</div>
+<div style="text-align: right; ">
+<br>
+</div>
+<div class="absolute-element" style="position: absolute; width: 292px; height: 290px; z-index: 4; left: 115px; top: 343px;">
+<img src="http://wiki.openstreetmap.org/w/images/thumb/b/b0/Openstreetmap_logo.svg/100px-Openstreetmap_logo.svg.png" style="width: 252.0381678879716px; height: 252.03816788797158px; max-height: none; max-width: none;">
+<br>
+</div>
+</section>
+<section>
+    <h2>Geoinquietos Sevilla</h2>
+<div class="absolute-element" style="position: absolute; width: 548px; height: 139.6641221374046px; z-index: 4; left: 205px; top: 104px; max-height: none; max-width: none;">
+<img src="http://wiki.osgeo.org/images/6/63/GeoinquietosSVQ.png">
+    <br>
+</div>
+<div class="absolute-element" style="position: absolute; width: 302.910941475827px; height: 229px; z-index: 4; left: 60px; top: 331px; max-height: none; max-width: none;">
+<img src="http://wiki.osgeo.org/images/3/38/AsistentesReunion5.jpg" style="width: 267.3867683968775px; height: 200.4886371686789px; max-height: none; max-width: none;">
+    <br>
+</div>
+<div class="absolute-element" style="position: absolute; width: 267px; height: 207px; z-index: 4; left: 297px; top: 416px;">
+<img src="http://wiki.osgeo.org/images/thumb/a/a0/GeoinquietosSevilla2.jpg/800px-GeoinquietosSevilla2.jpg" style="width: 330.42493633580875px; height: 238.70351355736227px; max-height: none; max-width: none;">
+    <br>
+</div>
+<div class="absolute-element" style="position: absolute; width: 621px; height: 46px; z-index: 4; left: 169px; top: 276px;">Encuentros locales para compartir SIG</div>
+<div class="absolute-element" style="position: absolute; width: 305px; height: 233px; z-index: 4; left: 606px; top: 328px;">
+    <img src="http://wiki.osgeo.org/images/thumb/c/c1/GeoinquietosSevilla1.jpg/800px-GeoinquietosSevilla1.jpg" style="width: 264.9690839701439px; height: 194.16284982181384px; max-height: none; max-width: none;">
+</div>
+<div class="absolute-element" style="position: absolute; width: 288.59033078880407px; height: 112px; z-index: 4; left: 328px; top: 323px; max-height: none; max-width: none;">
+<img src="http://wiki.osgeo.org/images/thumb/7/74/CartelGeoBirras.png/200px-CartelGeoBirras.png">
+</div>
+</section>
+<section>
+    <h2>¿Qué es OSM?</h2>
+<p>Proyecto para crear un mapa colaborativo mundial</p>
+<p>
+    <img src="http://hot.openstreetmap.org/sites/default/files/imagecache/project_page/DSC_0919.JPG">
+    <br>
+    </p>
+<p>Comienza huyendo de las restricciones de licencias</p>
+<p>La wikipedia de los mapas</p>
+<p>La información es poder</p>
+</section>
+<section>
+    <h2>Interfaz OSM</h2>
+<div>www.openstreetmap.org</div>
+<div>
+    <br>
+</div>
+<div>
+<br>
+</div>
+<div>
+<br>
+</div>
+<div>
+<br>
+</div>
+<div>
+<br>
+</div>
+<div>
+<br>
+</div>
+<div>
+<br>
+</div>
+<div>
+<br>
+</div>
+<div>
+<br>
+</div>
+<div>
+<span>
+    <br>
+</span>
+</div>
+<div>
+<span>VER</span>
+<br>
+</div>
+<div class="absolute-element" style="position: absolute; width: 968px; height: 503px; z-index: 4; left: 4px; top: 143px;">
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/moisesarcos/images/117269/ver.png" style="width: 922.4375559105349px; height: 452.078880356165px; max-height: none; max-width: none;">
+<br>
+</div>
+</section>
+<section>
+    <h2>Interfaz OSM</h2>
+<div>www.openstreetmap.org</div>
+<div>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/moisesarcos/images/117270/consultar.png" style="width: 832.4461255856442px; height: 421.0152671246128px; max-height: none; max-width: none;">
+    <br>
+</div>
+<div>CONSULTAR</div>
+</section>
+<section>
+    <h2>Interfaz OSM</h2>
+<div>www.openstreetmap.org<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/moisesarcos/images/117271/editar.png" style="width: 845.105735794966px; height: 422.7328243765212px; max-height: none; max-width: none;">
+</div>
+<div>EDITAR</div>
+</section>
+<section>
+    <h2>¿Quién usa OSM?</h2>
+<div class="absolute-element" style="position: absolute; width: 371.61577608142494px; height: 85px; z-index: 4; left: 41px; top: 502px; max-height: none; max-width: none;">
+    <p>FOURSQUARE</p>
+</div>
+<div>
+<br>
+</div>
+<div class="absolute-element" style="position: absolute; width: 766px; height: 351px; z-index: 10; left: 274px; top: 324px;">
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/moisesarcos/images/121533/biz-foursquare.png" style="width: 490.8354788985195px; height: 313.42493633580875px; max-height: none; max-width: none;">
+<br>
+</div>
+<div class="absolute-element" style="position: absolute; width: 688.3613231552163px; height: 351px; z-index: 5; left: 1px; top: 99px; max-height: none; max-width: none;">
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/moisesarcos/images/121535/osrm.png" style="width: 640.3664121627808px; height: 304.36641216278076px; max-height: none; max-width: none;">
+<br>
+</div>
+<div class="absolute-element" style="position: absolute; width: 525px; height: 134.7913486005089px; z-index: 6; left: 531px; top: 191px; max-height: none; max-width: none;">OSRM</div>
+<div class="absolute-element" style="position: absolute; width: 688.3613231552163px; height: 351px; z-index: 7; left: 1px; top: 99px; max-height: none; max-width: none;">
+<br>
+<br>
+</div>
+<div class="absolute-element" style="position: absolute; width: 688.3613231552163px; height: 351px; z-index: 8; left: 1px; top: 99px; max-height: none; max-width: none;">
+<br>
+</div>
+<div class="absolute-element" style="position: absolute; width: 688.3613231552163px; height: 351px; z-index: 9; left: 1px; top: 99px; max-height: none; max-width: none;">
+<br>
+</div>
+</section>
+<section>
+    <h2>Vamos a comparar</h2>
+<div>GMAPS vs OSM</div>
+<div>
+    <br>
+</div>
+<div class="absolute-element" style="position: absolute; width: 968px; height: 503px; z-index: 4; left: -7px; top: 150px;">
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/moisesarcos/images/117273/ComparacionOSM-GMaps.png">
+<br>
+</div>
+</section>
+<section>
+    <h2 style="font-style: normal; font-variant: normal;">Vamos a comparar</h2>
+<div>GMAPS vs OSM</div>
+<h2>
+    <div style="font-size: 35.623409271240234px; font-style: normal; font-variant: normal;">
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/moisesarcos/images/117274/Captura_de_pantalla_de_2013-10-13_14_23_03.png" style="width: 928.1452105175274px; height: 425.08905847321336px; max-height: none; max-width: none;">
+    <br>
+</div>
+</h2>
+</section>
+<section>
+    <h2 style="font-style: normal; font-variant: normal;">Vamos a comparar</h2>
+<h2>
+</h2>
+<p>GMAPS vs OSM</p>
+<div style="font-size: 35.623409271240234px; font-style: normal; font-variant: normal;">
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/moisesarcos/images/117275/guadalcanal.png">
+<br>
+</div>
+<div style="font-size: 35.623409271240234px; font-style: normal; font-variant: normal;">Queda mucho por HACER</div>
+</section>
+<section>
+    <h2>¿Cómo colaboro?</h2>
+<div>
+    <font style="font-size: 54px;">
+        <br>
+    </font>
+</div>
+<div>
+<font style="font-size: 54px;">Registrarse</font>
+</div>
+<div>
+<font style="font-size: 54px;">
+    <br>
+</font>
+</div>
+<div>
+<font style="font-size: 54px;">Recolectar datos</font>
+</div>
+<div>
+<font style="font-size: 54px;">
+    <br>
+</font>
+</div>
+<div>
+<font style="font-size: 54px;">Subir datos</font>
+</div>
+<div>
+<font style="font-size: 54px;">
+    <br>
+</font>
+</div>
+<div>
+<font style="font-size: 54px;">Consultarlos</font>
+</div>
+</section>
+<section>
+    <h2>¿Y ahora qué?</h2>
+<div>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/moisesarcos/images/117276/finger.jpg">
+    <br>
+</div>
+<div>It's your turn</div>
+</section>
+<section>
+    <h2>Referencias</h2>
+<div>OpenStreetMap</div>
+<div>
+<a href="http://www.openstreetmap.org/">http://www.openstreetmap.org</a>
+    <br>
+</div>
+<div>
+    <br>
+    </div>
+<div>Comparador de cartografía</div>
+<div>
+<a href="http://tools.geofabrik.de/">http://tools.geofabrik.de</a>
+    <br>
+</div>
+<div>
+    <br>
+    </div>
+<div>Fotos Geoinquietos Sevilla</div>
+<div>
+<a href="sevilla.geoinquietos.org">sevilla.geoinquietos.org</a>
+    <br>
+</div>
+<div>
+    <br>
+    </div>
+<div>Foto HOTOSM</div>
+<div>
+<a href="http://hot.openstreetmap.org/">http://hot.openstreetmap.org/</a>
+    <br>
+</div>
+<div>
+    <br>
+</div>
+</section>
+<section>
+    <h2>Licencia</h2>
+<div>
+    <br>
+</div>
+<div class="absolute-element" style="position: absolute; width: 637px; height: 246px; z-index: 4; left: 167px; top: 197px;">
+<img src="http://www.webislam.com/libs/timthumb.php?src=/media/2013/03/56559_cc-by-sa_big.png&amp;w=300" style="width: 596.9540779159607px; height: 207.4198472772846px; max-height: none; max-width: none;">
+<br>
+</div>
+</section>
+</div>
 
-  
-  </body>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
 </html>
